@@ -7,9 +7,9 @@ int main()
     string s;
     cin >> s;
     int n = s.size();
-    int c = 1, d = 1; // at least one char in string
+    int c = 1, d = 1;
 
-    for (int i = 0; i < n - 1; i++) // stop at n-2
+    for (int i = 0; i < n - 1; i++) 
     {
         if (s[i] == s[i + 1])
         {
@@ -17,10 +17,11 @@ int main()
         }
         else
         {
-            c = 1; // reset on break
+            c = 1;
         }
         d = max(d, c);
     }
     cout << d;
     return 0;
 }
+
